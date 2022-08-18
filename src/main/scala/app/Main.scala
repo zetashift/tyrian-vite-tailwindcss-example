@@ -16,6 +16,7 @@ enum Msg:
 @JSExportTopLevel("TyrianApp")
 object App extends TyrianApp[Msg, Model]:
   def init(flags: Map[String, String]): (Model, Cmd[IO, Msg]) =
+    println("hello!!")
     (Model.init, Cmd.None)
 
   def update(model: Model): Msg => (Model, Cmd[IO, Msg]) =

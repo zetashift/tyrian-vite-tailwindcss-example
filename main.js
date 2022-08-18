@@ -1,6 +1,4 @@
-import './style.css'
-import { TyrianApp } from './target/scala-3.1.3/app-fastopt/main'
+import "./style.css";
+import { TyrianApp } from "@linkOutputDir/main.js";
 
-TyrianApp.launch("app")
-
-
+TyrianApp.launch("app");
